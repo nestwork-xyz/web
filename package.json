@@ -2,6 +2,22 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "description": "A modern team workspace for managing projects, tasks, and documents",
+  "homepage": "https://nestwork.xyz",
+  "bugs": {
+    "url": "https://github.com/nestwork-xyz/web/issues",
+    "email": "hello@nestwork.xyz"
+  },
+  "license": "AGPL-3.0-only",
+  "author": {
+    "name": "Nestwork-XYZ (https://github.com/nestwork-xyz",
+    "email": "hello@nestwork.xyz",
+    "url": "https://nestwork.xyz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nestwork-xyz/web.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "next dev",
@@ -60,7 +76,7 @@
     "ultracite": "^7.8.3"
   },
   "engines": {
-    "node": ">=22.18.0",
-    "npm": ">=10.0.0"
+    "node": ">=22.22.1",
+    "npm": ">=10.9.0"
   }
 }
