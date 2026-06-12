@@ -11,3 +11,4 @@ usernamehw
 eamodio
 lycheecache
 lycheeverse
+lockfiles
