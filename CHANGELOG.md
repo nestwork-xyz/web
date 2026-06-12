@@ -31,6 +31,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Bumped required Node.js version from 20 to >=22.12.0 to satisfy `@commitlint/cli@21` engine requirements in workflows
 - Updated `.nvmrc` and `package.json` engines field accordingly
 - Updated commitlint.yml to use node-version-file instead of hardcoded Node 20
+- Reinitialized Husky and accompanying `commit-msg` and `pre-commit` hooks
+- Add `ignorePatterns` to Oxfmt configuration file
 
 ## [0.1.0] - 2026-06-12
 
