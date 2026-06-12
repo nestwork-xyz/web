@@ -21,44 +21,72 @@ The live application is available at [https://nestwork.xyz](https://nestwork.xyz
 
 ```ASCII
 nestwork-xyz/web/
-├─ .claude/                       # Claude Code workspace settings, commands, and AI development context
-├─ .github/                       # GitHub configuration (workflows, issue templates, etc.)
-│  └─ hooks/                      # AI agent hook configurations (Ultracite)
-├─ .husky/                        # Git hooks for enforcing code quality and commit standards
-├─ .vscode/                       # VSCode workspace settings, recommended extensions, etc.
-├─ docs/                          # Extended project documentation, ADR notes, etc.
-│  ├─ assets/                     # Documentation-only assets (images, diagrams, etc.)
-│  └─ adr/                        # Architecture Decision Records (ADRs)
-├─ plop-templates/                # Handlebars templates for Plop code generators
-├─ public/                        # Static assets served directly by Next.js (favicon, images, etc.)
-├─ src/                           # Application source code
-│  ├─ app/                        # Next.js App Router (routes, layouts, route handlers, etc.)
-│  │  ├─ layout.tsx               # Root Next.js layout file
-│  │  └─ page.tsx                 # Home page
-│  ├─ components/ui               # shadcn/ui component library
-│  ├─ lib/utils.ts                # Shared helper functions
-│  └─ styles/                     # Global styles
-├─ .editorconfig                  # Editor-agnostic coding style rules
-├─ .env.example                   # Example .env file for contributors
-├─ .gitattributes                 # Git behavior settings (line endings, diff rules, etc.)
-├─ .gitignore                     # Files and directories excluded from version control
-├─ .lintstagedrc.json             # lint-staged configuration for running checks on staged files
-├─ .npmrc                         # npm configuration (dependency behavior, install settings)
-├─ AGENTS.md                      # Guidelines for AI agents/tools interacting with the codebase
-├─ CHANGELOG.md                   # Project changelog (Keep a Changelog format)
-├─ CLAUDE.md                      # Project-specific instructions and context for Claude AI
-├─ commitlint.config.mjs          # Commit message linting rules (Conventional Commits)
-├─ components.json                # shadcn/ui component registry
-├─ LICENSE                        # Project license (AGPL-3.0)
-├─ next.config.ts                 # Next.js configuration
-├─ oxfmt.config.ts                # Oxlfmt configuration
-├─ oxlint.config.ts               # Oxlint configuration
-├─ package-lock.json              # Locked dependency versions for reproducible installs
-├─ package.json                   # Project metadata, scripts, and dependencies
-├─ plopfile.ts                    # Code generators (scaffolding components, pages, etc.)
-├─ postcss.config.mjs             # PostCSS configuration
-├─ README.md                      # Project overview, setup, and usage instructions
-└─ tsconfig.json                  # TypeScript configuration
+├─ .claude/                             # Claude Code workspace settings, commands, and contexts
+├─ .cspell/                             # Spell-check dictionaries
+├─ .github/                             # GitHub configuration (workflows, issue/PR templates, etc.)
+│  ├─ hooks/                            # AI agent hook configurations (Ultracite)
+│  ├─ ISSUE_TEMPLATE/                   # Structured templates for bug reports and feature requests
+│  │  ├─ bug_report.yml                 # Template for reporting bugs and reproducible issues
+│  │  ├─ config.yml                     # Disables blank issues, adds contact links
+│  │  ├─ documentation.yml              # Template for documentation improvements and additions
+│  │  ├─ feature_request.yml            # Template for proposing new features and enhancements
+│  │  └─ user_story.yml                 # Template for user stories and product requirements
+│  ├─ workflows/                        # GitHub Actions CI, release, lint, auto-merge, etc.
+│  │  ├─ auto-merge.yml                 # Dependabot auto-merge for safe updates
+│  │  ├─ build.yml                      # Build verification
+│  │  ├─ ci.yml                         # Full quality check suite
+│  │  ├─ codeql.yml                     # CodeQL security scanning
+│  │  ├─ commitlint.yml                 # Commit message validation
+│  │  ├─ link-check.yml                 # Dead link checker
+│  │  ├─ lint-and-check.yml             # Lint, format, spell, and markdown checks
+│  │  ├─ release.yml                    # Automated release via release-it
+│  │  └─ stale.yml                      # Stale issue and PR management
+│  ├─ dependabot.yml                    # Dependabot dependency update configuration
+│  ├─ pull_request_template.md          # Pull request template
+│  └─ SECURITY.md                       # Security policy, vulnerability reporting, and disclosure process
+├─ .husky/                              # Git hooks for enforcing code quality and commit standards
+├─ .vscode/                             # VSCode workspace settings, recommended extensions, etc.
+├─ docs/                                # Extended project documentation, ADR notes, etc.
+│  ├─ assets/                           # Documentation-only assets (images, diagrams, etc.)
+│  └─ adr/                              # Architecture Decision Records (ADRs)
+├─ plop-templates/                      # Handlebars templates for Plop code generators
+├─ public/                              # Static assets served directly by Next.js (images, etc.)
+├─ src/                                 # Application source code
+│  ├─ app/                              # Next.js App Router (routes, layouts, route handlers, etc.)
+│  │  ├─ layout.tsx                     # Root Next.js layout file
+│  │  └─ page.tsx                       # Home page
+│  ├─ components/ui                     # shadcn/ui component library
+│  ├─ lib/utils.ts                      # Shared helper functions
+│  └─ styles/globals.css                # Global styles
+├─ .editorconfig                        # Editor-agnostic coding style rules
+├─ .env.example                         # Example .env file for contributors
+├─ .gitattributes                       # Git behavior settings (line endings, diff rules, etc.)
+├─ .gitignore                           # Files and directories excluded from version control
+├─ .lintstagedrc.json                   # lint-staged configuration for running checks on staged files
+├─ .markdownlint-cli2.jsonc             # Markdown linting configuration
+├─ .npmrc                               # npm configuration (dependency behavior, install settings)
+├─ .nvmrc                               # Node.js version for local development consistency
+├─ .release-it.json                     # Release-it configuration for versioning and changelog
+├─ AGENTS.md                            # Guidelines for AI agents/tools interacting with the codebase
+├─ CHANGELOG.md                         # Project changelog (Keep a Changelog format)
+├─ CLAUDE.md                            # Project-specific instructions and context for Claude AI
+├─ CODE_OF_CONDUCT.md                   # Community standards and enforcement guidelines
+├─ commitlint.config.mjs                # Commit message linting rules (Conventional Commits)
+├─ components.json                      # shadcn/ui component registry
+├─ CONTRIBUTING.md                      # Contribution guidelines, workflow, and coding standards
+├─ cspell.json                          # Spell checking configuration for code and docs
+├─ LICENSE                              # Project license (AGPL-3.0)
+├─ lychee.toml                          # Dead link checker configuration
+├─ next.config.ts                       # Next.js configuration
+├─ oxfmt.config.ts                      # Oxfmt configuration
+├─ oxlint.config.ts                     # Oxlint configuration
+├─ package-lock.json                    # Locked dependency versions for reproducible installs
+├─ package.json                         # Project metadata, scripts, and dependencies
+├─ plopfile.ts                          # Code generators (scaffolding components, pages, etc.)
+├─ postcss.config.mjs                   # PostCSS configuration
+├─ README.md                            # Project overview, setup, and usage instructions
+├─ tsconfig.json                        # TypeScript configuration
+└─ vercel.json                          # Vercel deployment configuration
 ```
 
 ## Development Setup
@@ -123,6 +151,10 @@ npm run build      # Production build
 This project is currently in pre-1.0 development. Breaking changes may occur at any time.
 
 Releases follow [Semantic Versioning](https://semver.org/) and are documented in [CHANGELOG.md](./CHANGELOG.md).
+
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
 
 ## Author
 

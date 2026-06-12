@@ -6,6 +6,29 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Added
+
+- GitHub Actions workflows: build, ci, commitlint, codeql, lint-and-check, link-check, auto-merge, release, stale
+- Dependabot configuration with grouped updates for npm and github-actions ecosystems
+- Issue templates for bug reports, feature requests, user stories, and documentation issues
+- Pull request template
+- CONTRIBUTING.md with full development workflow and coding standards
+- CODE_OF_CONDUCT.md based on Contributor Covenant v2.1
+- SECURITY.md with vulnerability reporting guidelines
+- commitlint enforcing Conventional Commits via Husky commit-msg hook
+- CSpell spell checking with project-terms dictionary
+- markdownlint-cli2 with consolidated configuration
+- `.nvmrc` pinning Node.js 20
+- vercel.json with base deployment configuration
+- lychee.toml for dead link checking
+- .release-it.json for automated versioning and changelog generation
+- GitHub labels for type, status, priority, scope, and triage workflows
+
+### Changed
+
+- Use array destructuring to extract conventional commit types in Commitlint configuration
+- Added [Contributing](./README.md#contributing) section in README file
+
 ## [0.1.0] - 2026-06-12
 
 ### Added

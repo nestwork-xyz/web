@@ -43,3 +43,6 @@ next-env.d.ts
 
 # lint
 .markdownlintignore
+
+# cspell
+.cspellcache
