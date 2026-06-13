@@ -140,7 +140,7 @@ npm run build      # Production build
 
 - [Next.js](https://nextjs.org/docs)
 - [Ultracite](https://www.ultracite.ai/)
-- [TailwindCSS](https://tailwindcs.com)
+- [TailwindCSS](https://github.com/tailwindlabs/tailwindcss)
 - [PostCSS](https://postcss.org)
 - [shadcn/ui](https://ui.shadcn.com)
 - [Plop](https://plopjs.com)

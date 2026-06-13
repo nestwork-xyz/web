@@ -39,6 +39,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Reconfigured lint-staged
   - Changed config file from a `.json` to a `.mjs` file
   - Config now joins staged file paths and passes them as a single string argument to `ultracite fix`
+- Update TailwindCSS link for tech stack section in README file
 
 ## [0.1.0] - 2026-06-12
 
