@@ -2,6 +2,22 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "description": "A modern team workspace for managing projects, tasks, and documents",
+  "homepage": "https://nestwork.xyz",
+  "bugs": {
+    "url": "https://github.com/nestwork-xyz/web/issues",
+    "email": "hello@nestwork.xyz"
+  },
+  "license": "AGPL-3.0-only",
+  "author": {
+    "name": "Nestwork-XYZ (https://github.com/nestwork-xyz",
+    "email": "hello@nestwork.xyz",
+    "url": "https://nestwork.xyz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nestwork-xyz/web.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "next dev",
@@ -9,7 +25,7 @@
     "start": "next start",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
-    "lint:md": "markdownlint **/*.md",
+    "lint:md": "markdownlint-cli2 **/*.md",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "check": "ultracite check",
@@ -37,26 +53,30 @@
     "@commitlint/cli": "^21.0.2",
     "@commitlint/config-conventional": "^21.0.2",
     "@commitlint/format": "^21.0.1",
+    "@release-it/conventional-changelog": "11.0.1",
+    "@release-it/keep-a-changelog": "7.1.0",
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.20",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
-    "husky": "^9.1.7",
+    "cspell": "10.0.1",
+    "husky": "9.1.7",
     "lint-staged": "^17.0.7",
-    "markdownlint-cli": "0.48.0",
+    "markdownlint-cli2": "0.22.1",
     "open-cli": "^9.0.0",
     "oxfmt": "^0.54.0",
     "oxlint": "^1.69.0",
     "oxlint-tsgolint": "^0.23.0",
     "plop": "4.0.5",
+    "release-it": "20.2.0",
     "tailwindcss": "^4",
     "typescript": "^5",
     "ultracite": "^7.8.3"
   },
   "engines": {
-    "node": ">=20.0.0",
-    "npm": ">=10.0.0"
+    "node": ">=22.22.1",
+    "npm": ">=10.9.0"
   }
 }

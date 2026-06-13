@@ -6,6 +6,41 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Added
+
+- GitHub Actions workflows: build, ci, commitlint, codeql, lint-and-check, link-check, auto-merge, release, stale
+- Dependabot configuration with grouped updates for npm and github-actions ecosystems
+- Issue templates for bug reports, feature requests, user stories, and documentation issues
+- Pull request template
+- CONTRIBUTING.md with full development workflow and coding standards
+- CODE_OF_CONDUCT.md based on Contributor Covenant v2.1
+- SECURITY.md with vulnerability reporting guidelines
+- commitlint enforcing Conventional Commits via Husky commit-msg hook
+- CSpell spell checking with project-terms dictionary
+- markdownlint-cli2 with consolidated configuration
+- `.nvmrc` pinning Node.js 20
+- vercel.json with base deployment configuration
+- lychee.toml for dead link checking
+- .release-it.json for automated versioning and changelog generation
+- GitHub labels for type, status, priority, scope, and triage workflows
+
+### Changed
+
+- Use array destructuring to extract conventional commit types in Commitlint configuration
+- Added [Contributing](./README.md#contributing) section in README file
+- Bumped required Node.js version from 20 to >=22.22.1 to satisfy engine requirements in workflows
+- Bumped npm version to 10.0.0
+- Updated `.nvmrc` and `package.json` engines field accordingly
+- Updated commitlint.yml to use node-version-file instead of hardcoded Node 20
+- Reinitialized Husky and accompanying `commit-msg` and `pre-commit` hooks
+- Add `ignorePatterns` to Oxfmt configuration file
+- Removed invalid `exclude_mail = true` setting in Lychee configuration
+- Add `lockfiles` to project-terms dictionary and ignore `.github` folder in CSPell configuration
+- Reconfigured lint-staged
+  - Changed config file from a `.json` to a `.mjs` file
+  - Config now joins staged file paths and passes them as a single string argument to `ultracite fix`
+- Update TailwindCSS link for tech stack section in README file
+
 ## [0.1.0] - 2026-06-12
 
 ### Added
