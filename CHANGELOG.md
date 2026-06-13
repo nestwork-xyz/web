@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-06-13
+
 ### Added
 
 - GitHub Actions workflows: build, ci, commitlint, codeql, lint-and-check, link-check, auto-merge, release, stale
@@ -54,5 +56,6 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - React Compiler enabled via `babel-plugin-react-compiler`
 - AGENTS.md and CLAUDE.md for AI coding agent context
 
-[Unreleased]: https://github.com/nestwork-xyz/web/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/nestwork-xyz/web/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/nestwork-xyz/web/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/nestwork-xyz/web/releases/tag/v0.1.0
