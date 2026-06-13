@@ -13,7 +13,8 @@
     "*.map",
     "tsconfig.tsbuildinfo",
     ".vscode",
-    ".env*"
+    ".env*",
+    ".github"
   ],
   "dictionaryDefinitions": [
     {

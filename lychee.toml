@@ -25,9 +25,6 @@ max_redirects = 5
 # Accept success and rate-limited responses
 accept = ["200..=299", "429"]
 
-# Don't fail on rate limiting
-exclude_mail = true
-
 # Cache results
 cache = true
 max_cache_age = "1d"

@@ -34,6 +34,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Updated commitlint.yml to use node-version-file instead of hardcoded Node 20
 - Reinitialized Husky and accompanying `commit-msg` and `pre-commit` hooks
 - Add `ignorePatterns` to Oxfmt configuration file
+- Removed invalid `exclude_mail = true` setting in Lychee configuration
+- Add `lockfiles` to project-terms dictionary and ignore `.github` folder in CSPell configuration
+- Reconfigured lint-staged
+  - Changed config file from a `.json` to a `.mjs` file
+  - Config now joins staged file paths and passes them as a single string argument to `ultracite fix`
 
 ## [0.1.0] - 2026-06-12
 
