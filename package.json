@@ -1,0 +1,40 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A modern team workspace for managing projects, tasks, and documents",
+  "homepage": "https://nestwork.xyz",
+  "bugs": {
+    "url": "https://github.com/nestwork-xyz/web/issues",
+    "email": "hello@nestwork.xyz"
+  },
+  "license": "AGPL-3.0-only",
+  "author": {
+    "name": "Nestwork-XYZ (https://github.com/nestwork-xyz",
+    "email": "hello@nestwork.xyz",
+    "url": "https://nestwork.xyz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nestwork-xyz/web.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "16.2.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
