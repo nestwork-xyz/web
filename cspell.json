@@ -63,7 +63,17 @@
     "vscode",
     "mkdir",
     "unlink",
-    "tsgolint"
+    "tsgolint",
+    "feat",
+    "fix",
+    "docs",
+    "chore",
+    "refactor",
+    "perf",
+    "build",
+    "ci",
+    "revert",
+    "deps"
   ],
   "ignoreWords": [],
   "patterns": [
@@ -72,6 +82,9 @@
       "pattern": "(?:#)?:[0-9a-fA-F]{3}|[0-9a-fA-F]{6}"
     }
   ],
-  "ignoreRegExpList": ["/\\b[a-z]+rc\\b/"],
+  "ignoreRegExpList": [
+    "/\\b[a-z]+rc\\b/",
+    "/^(feat|fix|docs|chore|refactor|test|build|ci|perf)(\\(.+\\))?:/"
+  ],
   "import": []
 }
