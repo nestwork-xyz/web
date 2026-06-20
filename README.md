@@ -60,6 +60,7 @@ nestwork-xyz/web/
 ├─ .markdownlint-cli2.jsonc             # Markdown linting configuration
 ├─ .npmrc                               # npm configuration (dependency behavior, install settings)
 ├─ .nvmrc                               # Node.js version for local development consistency
+├─ .release-it.json                     # Release-it configuration for versioning and changelog
 ├─ AGENTS.md                            # Guidelines for AI agents/tools interacting with the codebase
 ├─ CHANGELOG.md                         # Project changelog (Keep a Changelog format)
 ├─ CLAUDE.md                            # Project-specific instructions and context for Claude AI
@@ -68,6 +69,7 @@ nestwork-xyz/web/
 ├─ CONTRIBUTING.md                      # Contribution guidelines, workflow, and coding standards
 ├─ cspell.json                          # Spell checking configuration for code and docs
 ├─ LICENSE                              # Project license (AGPL-3.0)
+├─ lychee.toml                          # Dead link checker configuration
 ├─ next.config.ts                       # Next.js configuration
 ├─ package-lock.json                    # Locked dependency versions for reproducible installs
 ├─ package.json                         # Project metadata, scripts, and dependencies
