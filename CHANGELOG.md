@@ -6,6 +6,26 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-06-20
+
+### Added
+
+- GitHub CI/CD workflows for lint checks, code quality, build, stale issues management, dead link checks, auto PR merge, release management.
+- Dependabot configuration with grouped updates for npm and github-actions ecosystems.
+- Commit message spell checking using CSpell via the `commit-msg` Husky hook.
+- Commit message validation in the `commit-msg` hook using Commitlint.
+- Conventional Commit terms and project-specific terminology to the CSpell dictionary to reduce false positives.
+- Plop configuration, corresponding template files in `plop-templates` folder, and run script in `package.json`.
+- [Repository Standards](./README.md#repository-standards) section in README file.
+- Added bash files found in `.github/` folder to ignore list in CSpell configuration.
+
+### Changed
+
+- Updated commit workflow to validate new commit messages during the commit-msg phase.
+- Retained commit history validation in the pre-commit hook to help identify non-compliant commit messages introduced through merges or other workflows.
+- Limited commit message spell checking to the commit subject line to improve signal-to-noise ratio and avoid false positives from footers, issue references, and metadata.
+- Updated project structure diagram in README file to reflect newly added files and folders.
+
 ## [0.3.0] - 2026-06-19
 
 ### Added
@@ -73,7 +93,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Updated application metadata to use the Nestwork name and description.
 - Replaced the default Next.js landing page with an under-construction page linking to the Nestwork organization and web repository
 
-[Unreleased]: https://github.com/nestwork-xyz/web/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/nestwork-xyz/web/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/nestwork-xyz/web/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/nestwork-xyz/web/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/nestwork-xyz/web/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/nestwork-xyz/web/releases/tag/v0.1.0
