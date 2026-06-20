@@ -1,5 +1,5 @@
 {
-  "*.{js,jsx,ts,tsx,json,jsonc,css,scss,md,mdx}": ["npx ultracite fix ."],
-  "*.{js,jsx,ts,tsx,json,jsonc,md,mdx}": ["cspell --no-summary"],
-  "*.{md,mdx}": ["markdownlint-cli2"]
+  "*.{js,jsx,ts,tsx,json,jsonc,css,scss}": ["npx ultracite fix ."],
+  "*.{js,jsx,ts,tsx,json,jsonc,md,mdx}": ["npx cspell"],
+  "*.{md,mdx}": ["npx markdownlint-cli2"]
 }
