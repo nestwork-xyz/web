@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 - GitHub CI/CD workflows for lint checks, code quality, build, stale issues management, dead link checks, auto PR merge, release management.
+- Lychee configuration with `link-check` workflow for dead link checks in code and documentation files.
 - Dependabot configuration with grouped updates for npm and github-actions ecosystems.
 - Commit message spell checking using CSpell via the `commit-msg` Husky hook.
 - Commit message validation in the `commit-msg` hook using Commitlint.
@@ -18,6 +19,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Plop configuration, corresponding template files in `plop-templates` folder, and run script in `package.json`.
 - [Repository Standards](./README.md#repository-standards) section in README file.
 - Added bash files found in `.github/` folder to ignore list in CSpell configuration.
+- Release-it configuration for automating versioning and releases.
 
 ### Changed
 
