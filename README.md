@@ -2,8 +2,11 @@
 
 ![License](https://img.shields.io/github/license/nestwork-xyz/web?color=blue)
 ![Version](https://img.shields.io/github/v/tag/nestwork-xyz/web?label=version)
+![Build](https://img.shields.io/github/actions/workflow/status/nestwork-xyz/web/ci.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/nestwork-xyz/web?color=yellow)
 ![Contributors](https://img.shields.io/github/contributors/nestwork-xyz/web?color=5d00ff)
+![Open Issues](https://img.shields.io/github/issues/nestwork-xyz/web?color=ff0000)
+![GitHub Repo stars](https://img.shields.io/github/stars/nestwork-xyz/web)
 
 **Nestwork** is a modern team workspace for managing projects, tasks, and documents — with kanban boards, @mentions, file uploads, and real-time collaboration.
 
@@ -77,6 +80,53 @@ nestwork-xyz/web/
 ├─ README.md                            # Project overview, setup, and usage instructions
 ├─ SUPPORT.md                           # Support channels, troubleshooting, and help resources
 └─ tsconfig.json                        # TypeScript configuration
+```
+
+## Development Setup
+
+### Prerequisites
+
+- Node.js >= 20.x ([nvm](https://github.com/nvm-sh/nvm) recommended)
+- npm >= 10.x
+
+### Installation
+
+1. Clone the repository and install dependencies:
+
+   ```bash
+   git clone https://github.com/nestwork-xyz/web.git
+   cd web
+   npm install
+   ```
+
+2. Configure environment variables:
+
+   ```bash
+   cp .env.example .env.local
+   # Windows (CMD/Powershell)
+   copy .env.example .env.local
+   ```
+
+   Fill in the required values &mdash; see `.env.example` for descriptions of each variable.
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   The app will be available at [`http://localhost:3000`](https://localhost:3000)
+
+4. You can start editing the project! The application automatically reloads as you edit files during development.
+
+   > This project uses the [`geist`](https://vercel.com/geist/introduction) npm package to load Geist Sans and Geist Mono, applied via CSS variables.
+
+### Verify your setup
+
+```bash
+npm run typecheck  # TypeScript
+npm run check      # OXLint + OXFmt
+npm run build      # Production build
 ```
 
 ## Versioning
