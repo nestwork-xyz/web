@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-06-20
+
 ### Added
 
 - Nestwork branding assets to the `public/brand` folder, and browser icons (favicon, apple-icon, etc.) to the `public/` folder.
@@ -133,7 +135,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Updated application metadata to use the Nestwork name and description.
 - Replaced the default Next.js landing page with an under-construction page linking to the Nestwork organization and web repository
 
-[Unreleased]: https://github.com/nestwork-xyz/web/compare/v0.4.2...HEAD
+[Unreleased]: https://github.com/nestwork-xyz/web/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/nestwork-xyz/web/compare/v0.4.2...v0.5.0
 [0.4.2]: https://github.com/nestwork-xyz/web/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/nestwork-xyz/web/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/nestwork-xyz/web/compare/v0.3.0...v0.4.0
