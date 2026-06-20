@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
+import { createMetadata } from "@/config/metadata";
+
 import "./globals.css";
 
 const geistSans = Geist({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-sans",
 });
 
 const geistMono = Geist_Mono({
@@ -13,10 +15,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
 });
 
-export const metadata: Metadata = {
-  description: "Work Flows Here",
-  title: "Nestwork",
-};
+export const metadata: Metadata = createMetadata({});
 
 export default function RootLayout({
   children,
