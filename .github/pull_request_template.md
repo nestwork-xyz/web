@@ -33,3 +33,16 @@ Closes #
 ## Screenshots
 
 <!-- For UI changes, include before/after screenshots or a screen recording -->
+
+<!--
+
+## Merge Commit Guidance
+
+When squashing this PR, ensure the squash commit:
+
+- Uses Conventional Commits.
+- Summarizes the overall change rather than individual commits.
+- Includes a brief rationale paragraph.
+- Includes key implementation details as bullet points when appropriate.
+
+-->

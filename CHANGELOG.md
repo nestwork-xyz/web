@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Husky `pre-push` hook to validate only commit messages being pushed.
 - Build, open issues, and GitHub repo stars badges in the head of the README file.
 - [Development Setup](./README.md#development-setup) section in README file.
+- Pull request merge commit format guidelines in the CONTRIBUTING file.
+- Merge commit guidance comment in the pull request template.
 
 ## [0.4.1] - 2026-06-20
 
