@@ -1,4 +1,4 @@
-# Nestwork
+# <img src="./docs/assets/brand/nestwork-primary.svg#gh-light-mode-only" alt="Nestwork logo" height="30" /><img src="./docs/assets/brand/nestwork-blue-white.svg#gh-dark-mode-only" alt="Nestwork logo" height="30" />
 
 ![License](https://img.shields.io/github/license/nestwork-xyz/web?color=blue)
 ![Version](https://img.shields.io/github/v/tag/nestwork-xyz/web?label=version)
@@ -17,13 +17,27 @@ nestwork-xyz/web/
 ├─ .claude/                             # Claude Code workspace settings, commands, and contexts
 ├─ .cspell/                             # Spell-check dictionaries
 ├─ .github/                             # GitHub configuration (workflows, issue/PR templates, etc.)
-│  └─ hooks/                            # AI agent hook configurations (Ultracite)
+│  ├─ hooks/                            # AI agent hook configurations (Ultracite)
+│  ├─ ISSUE_TEMPLATE/                   # Structured templates for bug reports and feature requests
+│  │  ├─ bug_report.yml                 # Template for reporting bugs and reproducible issues
+│  │  ├─ config.yml                     # Disables blank issues, adds contact links
+│  │  ├─ documentation.yml              # Template for documentation improvements and additions
+│  │  ├─ feature_request.yml            # Template for proposing new features and enhancements
+│  │  ├─ task.yml                       # Template for chores/engineering tasks
+│  │  └─ user_story.yml                 # Template for user stories and product requirements
+│  ├─ CODEOWNERS                        # Pull request template
+│  ├─ pull_request_template.md          # Pull request template
+│  └─ SECURITY.md                       # Security policy, vulnerability reporting, and disclosure process
 ├─ .husky/                              # Git hooks for enforcing code quality and commit standards
 ├─ .vscode/                             # VSCode workspace settings, recommended extensions, etc.
-├─ docs/adr/                            # Architecture Decision Records (ADRs)
+├─ docs/                                # Extended project documentation, ADR notes, etc.
+│  ├─ assets/                           # Documentation-only assets (images, diagrams, etc.)
+│  └─ adr/                              # Architecture Decision Records (ADRs)
 ├─ public/                              # Static assets served directly by Next.js
 ├─ src/                                 # Application source code (App Router, components, styles, utilities)
 │  ├─ app/                              # Next.js App Router (routes, layouts, route handlers, etc.)
+│  │  ├─ favicon.ico                    # Browser tab icon
+│  │  ├─ globals.css                    # Global stylesheet
 │  │  ├─ layout.tsx                     # Root application layout
 │  │  └─ page.tsx                       # Home page
 ├─ .editorconfig                        # Editor-agnostic coding style rules
@@ -36,7 +50,9 @@ nestwork-xyz/web/
 ├─ AGENTS.md                            # Guidelines for AI agents/tools interacting with the codebase
 ├─ CHANGELOG.md                         # Project changelog (Keep a Changelog format)
 ├─ CLAUDE.md                            # Project-specific instructions and context for Claude AI
+├─ CODE_OF_CONDUCT.md                   # Community standards and enforcement guidelines
 ├─ commitlint.config.mjs                # Commit message linting rules (Conventional Commits)
+├─ CONTRIBUTING.md                      # Contribution guidelines, workflow, and coding standards
 ├─ cspell.json                          # Spell checking configuration for code and docs
 ├─ LICENSE                              # Project license (AGPL-3.0)
 ├─ next.config.ts                       # Next.js configuration
@@ -44,8 +60,19 @@ nestwork-xyz/web/
 ├─ package.json                         # Project metadata, scripts, and dependencies
 ├─ postcss.config.mjs                   # PostCSS configuration
 ├─ README.md                            # Project overview, setup, and usage instructions
+├─ SUPPORT.md                           # Support channels, troubleshooting, and help resources
 └─ tsconfig.json                        # TypeScript configuration
 ```
+
+## Versioning
+
+This project is currently in pre-1.0 development. Breaking changes may occur at any time.
+
+Releases follow [Semantic Versioning](https://semver.org/) and are documented in [CHANGELOG.md](./CHANGELOG.md).
+
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
 
 ## Author
 
