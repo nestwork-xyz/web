@@ -6,6 +6,35 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-06-19
+
+### Added
+
+- Commitlint configuration with Husky commit-msg hook for linting Git commits.
+- Markdownlint configuration with corresponding `lint:md` script in package.json file.
+- Enabled Ultracite with Oxlint and Oxfmt configuration files and corresponding lint, format, and fix scripts in `package.json` file.
+- `.nvmrc` pinning Node to version `v22.22.1`.
+- `engines` field enforcing Node version >=22 and npm >=11 in `package.json`
+- `.editorconfig` and `.gitattributes` for consistent editor and Git behavior.
+- `.npmrc` to configure NPM behavior for dependency management.
+- Code spell checker configuration with `cspell` with custom `project-terms` dictionary in `.cspell/` directory.
+- Configured `.github/hooks/ultracite.json` for GitHub awareness of Ultracite lint and formatting commands.
+- `.vscode/` folder containing VSCode workspace settings and recommended extensions list.
+- Added ADR docs explaining choices of package manager, linter/formatter, React compiler, and app router
+
+### Changed
+
+- Expanded `lint-staged` configuration to also run spellchecker and lint markdown files as well.
+- Add `.cspellcache` to ignore patterns in `.gitignore` file.
+- Formatted root `layout.tsx` file with Oxlint.
+- Updated AI agent files to provide more context on formatting standards for the project.
+- Updated project structure diagram in README file to reflect new files.
+
+### Fixed
+
+- Typo in this CHANGELOG file.
+- Invalid DOM property `clip-rule` in `page.tsx` to `clipRule`.
+
 ## [0.1.0] - 2026-06-19
 
 ### Added
@@ -20,7 +49,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Changed
 
 - Updated application metadata to use the Nestwork name and description.
-- Replaced the defautl Next.js landing page with an under-construction page linking to the Nestwork organization and web repository
+- Replaced the default Next.js landing page with an under-construction page linking to the Nestwork organization and web repository
 
-[Unreleased]: https://github.com/nestwork-xyz/web/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/nestwork-xyz/web/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/nestwork-xyz/web/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/nestwork-xyz/web/releases/tag/v0.1.0
