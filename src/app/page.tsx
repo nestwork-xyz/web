@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+
+import { createMetadata } from "@/config/metadata";
+
+export const metadata: Metadata = createMetadata({
+  title: "Modern team workspace and project management platform",
+});
 
 const GitHub = ({ className }: Readonly<{ className?: string }>) => (
   <svg
@@ -28,7 +36,15 @@ export default function Home() {
             href="/"
             className="text-lg tracking-tight text-zinc-400 hover:text-white transition-colors duration-150"
           >
-            Nestwork
+            <Image
+              className="transition-opacity duration-150 hover:opacity-80"
+              src="/brand/svg/nestwork-blue-white.svg"
+              priority
+              alt="Nestwork logo"
+              height={0}
+              width={0}
+              style={{ height: "auto", width: "120px" }}
+            />
           </Link>
         </div>
       </header>

@@ -6,6 +6,27 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Added
+
+- Nestwork branding assets to the `public/brand` folder, and browser icons (favicon, apple-icon, etc.) to the `public/` folder.
+- `not-found.tsx` global 404 page with illustration, go home, and go back actions.
+- `loading.tsx` global loading state.
+- `site.ts` site constants (name, URL, descriptions, social links).
+- `metadata.ts` + metadata generation utility for consistent metadata setup.
+- `manifest.ts` PWA web app manifest.
+- Reusable illustration images for UI content in `public/illustrations`.
+
+### Changed
+
+- `layout.tsx` updated to use `createMetadata` for root metadata.
+- `(marketing)/page.tsx` updated to use `createMetadata` for page-level metadata.
+- Updated project structure diagram in README to reflect new files.
+- Replaced "Nestwork" text with official logo in landing page header.
+
+### Removed
+
+- Default `favicon.ico` from the `app/` folder (Nestwork branded favicon now lives in `public/` folder).
+
 ## [0.4.2] - 2026-06-20
 
 ### Added
