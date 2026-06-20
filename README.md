@@ -25,7 +25,19 @@ nestwork-xyz/web/
 │  │  ├─ feature_request.yml            # Template for proposing new features and enhancements
 │  │  ├─ task.yml                       # Template for chores/engineering tasks
 │  │  └─ user_story.yml                 # Template for user stories and product requirements
+│  ├─ scripts/                          # Custom scripts for GitHub automation and CI/CD tasks
+│  ├─ workflows/                        # GitHub Actions CI, release, lint, auto-merge, etc.
+│  │  ├─ auto-merge.yml                 # Dependabot auto-merge for safe updates
+│  │  ├─ build.yml                      # Build verification
+│  │  ├─ ci.yml                         # Full quality check suite
+│  │  ├─ codeql.yml                     # CodeQL security scanning
+│  │  ├─ commitlint.yml                 # Commit message validation
+│  │  ├─ link-check.yml                 # Dead link checker
+│  │  ├─ lint-and-check.yml             # Lint, format, spell, and markdown checks
+│  │  ├─ release.yml                    # Automated release via release-it
+│  │  └─ stale.yml                      # Stale issue and PR management
 │  ├─ CODEOWNERS                        # Pull request template
+│  ├─ dependabot.yml                    # Dependabot dependency update configuration
 │  ├─ pull_request_template.md          # Pull request template
 │  └─ SECURITY.md                       # Security policy, vulnerability reporting, and disclosure process
 ├─ .husky/                              # Git hooks for enforcing code quality and commit standards
@@ -33,6 +45,7 @@ nestwork-xyz/web/
 ├─ docs/                                # Extended project documentation, ADR notes, etc.
 │  ├─ assets/                           # Documentation-only assets (images, diagrams, etc.)
 │  └─ adr/                              # Architecture Decision Records (ADRs)
+├─ plop-templates/                      # Handlebars templates for Plop code generators
 ├─ public/                              # Static assets served directly by Next.js
 ├─ src/                                 # Application source code (App Router, components, styles, utilities)
 │  ├─ app/                              # Next.js App Router (routes, layouts, route handlers, etc.)
@@ -69,6 +82,17 @@ nestwork-xyz/web/
 This project is currently in pre-1.0 development. Breaking changes may occur at any time.
 
 Releases follow [Semantic Versioning](https://semver.org/) and are documented in [CHANGELOG.md](./CHANGELOG.md).
+
+## Repository Standards
+
+Nestwork includes a complete governance and automation setup, including:
+
+- Conventional commits
+- Commitlint and Husky hooks
+- Dependabot configuration
+- GitHub issue and pull request templates
+- Standardized GitHub labels via [.github/scripts/create-gh-labels.sh](./.github/scripts/create-gh-labels.sh)
+- Automated release tooling with `Release-it`
 
 ## Contributing
 
