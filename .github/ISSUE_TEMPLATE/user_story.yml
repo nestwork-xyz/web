@@ -1,0 +1,191 @@
+name: "📖 User Story"
+description: Define a new feature or enhancement from the user's perspective for Nestwork.
+title: "story: "
+labels:
+  - "user story"
+  - "needs-refinement"
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to propose a new feature or enhancement for Nestwork. A good user story focuses on the **value** delivered to the user, not the technical implementation.
+
+        **Before submitting**, please:
+        - Search [existing stories](../issues?q=is%3Aissue+label%3Auser-story) to confirm this feature hasn't already been proposed
+        - Ensure this aligns with Nestwork's product vision and current priorities
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight checklist
+      options:
+        - label: I searched existing stories and this feature has not been proposed
+          required: true
+        - label: I've described the "what" and "why" (technical implementation details belong in the PR)
+          required: true
+        - label: I understand that stories may be re-prioritized or broken into smaller pieces during refinement
+          required: true
+
+  - type: textarea
+    id: story
+    attributes:
+      label: User Story
+      description: |
+        Write the story using the standard format. Keep it focused; if you're describing multiple behaviors, consider splitting into separate stories.
+
+        **Format:** As a `<type of user>`, I want `<goal>` so that `<reason>`.
+      placeholder: |
+        As a workspace member,
+        I want to see all open tasks assigned to me on a kanban board
+        so that I can prioritize my work at a glance.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: user_persona
+    attributes:
+      label: User Persona
+      description: Which type of user does this story primarily benefit?
+      options:
+        - "Workspace Owner"
+        - "Workspace Admin"
+        - "Workspace Member"
+        - "Guest"
+        - "Unauthenticated User"
+        - "All Users"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected Area
+      description: Which part(s) of Nestwork does this story touch?
+      multiple: true
+      options:
+        - "Authentication"
+        - "Account & Profile"
+        - "Workspace Management"
+        - "Project Management"
+        - "Task Management"
+        - "Kanban Board"
+        - "Document Management"
+        - "File Attachments"
+        - "Real-time Collaboration"
+        - "Mentions & Notifications"
+        - "Application Notifications"
+        - "Email Notifications"
+        - "Activity Feed"
+        - "Search"
+        - "Analytics & Reporting"
+        - "Billing & Subscriptions"
+        - "Users & Roles (RBAC)"
+        - "Onboarding"
+        - "Navigation & Layout"
+        - "API"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Business Priority
+      description: |
+        How important is this feature relative to other work?
+        (Final priority will be set during refinement.)
+      options:
+        - "Critical (blocking other work or a key customer commitment)"
+        - "High (delivers significant user value)"
+        - "Medium (important but can be deferred if needed)"
+        - "Low (nice to have, low urgency)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Detailed Description
+      description: |
+        Provide additional context that helps the team understand the problem space.
+
+        Include:
+        - What problem does this solve? What is the user trying to accomplish?
+        - What is the current user experience (if any)?
+        - Are there any designs, mockups, or references to link to?
+        - Edge cases or constraints to consider
+      placeholder: |
+        Currently, workspace members have no way to view all of their assigned tasks across multiple projects in one place. They have to navigate into each project individually to check for open work. A personal task view would surface all assigned, in-progress, and overdue tasks at a glance regardless of which project they belong to.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        Define the conditions that must be met for this story to be considered complete.
+
+        Use the **Given / When / Then** format for clarity. Each criterion should be independently testable.
+      placeholder: |
+        **Scenario 1: Tasks displayed correctly**
+        Given I am a workspace member with tasks assigned across multiple projects
+        When I navigate to my personal task view
+        Then I see all open tasks assigned to me regardless of project
+
+        **Scenario 2: Empty state**
+        Given I am a workspace member with no assigned tasks
+        When I navigate to my personal task view
+        Then I see an empty state message: "You have no tasks assigned to you"
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: Technical Notes (optional)
+      description: |
+        Any implementation hints, dependencies, or constraints the developer should know.
+        This section is **not required** (it will be expanded during refinement).
+
+        Examples:
+        - "Tasks can be queried by assignee_id across the tasks table — no new schema needed"
+        - "Depends on the task model being finalized first (see story #XXX)"
+        - "Consider WebSocket updates for real-time task status changes"
+      placeholder: Leave blank if you're unsure; this is for the engineer to discuss during refinement.
+
+  - type: dropdown
+    id: size_estimate
+    attributes:
+      label: Size Estimate (T-Shirt)
+      description: Rough effort estimate. This will be refined by the team during planning.
+      options:
+        - "XS — hours, not days"
+        - "S — ~1-2 days"
+        - "M — ~3-5 days"
+        - "L — ~1-2 weeks"
+        - "XL — needs to be broken down"
+        - "Unknown — needs discussion"
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attachments & References
+      description: |
+        Drag and drop supporting materials here:
+        - Figma designs or mockups
+        - Screenshots of similar tools (Linear, Notion, Asana, etc.)
+        - Links to related issues or discussions
+      placeholder: Drag files here or paste links
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: |
+        Anything else that helps understand this feature:
+        - How many users are affected or requesting this?
+        - What is the impact of *not* doing this?
+        - Are there time-sensitive reasons to prioritize this now?

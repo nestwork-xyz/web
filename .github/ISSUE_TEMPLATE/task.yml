@@ -1,0 +1,73 @@
+name: Task
+description: Internal engineering, maintenance, refactoring, or operational work.
+title: "[Task]: "
+labels:
+  - task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for engineering work, maintenance, refactoring,
+        infrastructure, technical debt, or operational tasks.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the work to be completed.
+      placeholder: Upgrade Next.js to the latest version.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this task needed?
+      placeholder: Security fixes, performance improvements, maintenance, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What conditions must be met for this task to be considered complete?
+      placeholder: |
+        - [ ] Dependencies upgraded
+        - [ ] Build passes
+        - [ ] Documentation updated
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - low priority
+        - medium priority
+        - high priority
+        - critical priority
+    validations:
+      required: true
+
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Estimated Effort
+      options:
+        - "XS — hours, not days"
+        - "S — ~1-2 days"
+        - "M — ~3-5 days"
+        - "L — ~1-2 weeks"
+        - "XL — needs to be broken down"
+        - "Unknown — needs discussion"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Links, screenshots, related issues, or implementation notes.
