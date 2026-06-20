@@ -18,10 +18,22 @@
     "type": "git",
     "url": "https://github.com/nestwork-xyz/web.git"
   },
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "lint:md": "markdownlint-cli2 **/*.md",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "check": "ultracite check",
+    "fix": "ultracite fix",
+    "cspell": "cspell ** --dot --cache",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky",
+    "docs": "open-cli https://github.com/nestwork-xyz/web#README"
   },
   "dependencies": {
     "next": "16.2.9",
@@ -29,12 +41,28 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "21.0.2",
+    "@commitlint/config-conventional": "21.0.2",
+    "@commitlint/format": "21.0.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "cspell": "10.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.7",
+    "markdownlint-cli2": "0.22.1",
+    "open-cli": "9.0.0",
+    "oxfmt": "^0.55.0",
+    "oxlint": "^1.70.0",
+    "oxlint-tsgolint": "^0.23.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "ultracite": "^7.8.3"
+  },
+  "engines": {
+    "node": ">=22.22.1",
+    "npm": ">=11.3.0"
   }
 }
