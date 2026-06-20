@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json",
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": [
+    ".git",
+    ".next",
+    "node_modules",
+    "public",
+    "*.lock",
+    "package-lock.json",
+    "*.min.js",
+    "*.map",
+    "tsconfig.tsbuildinfo",
+    ".vscode",
+    ".env*",
+    ".github"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-terms",
+      "path": "./.cspell/project-terms.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": [
+    "git",
+    "filetypes",
+    "npm",
+    "typescript",
+    "json",
+    "css",
+    "html",
+    "markdown",
+    "node",
+    "lorem-ipsum",
+    "softwareTerms",
+    "misc",
+    "project-terms"
+  ],
+  "words": [
+    "nestwork",
+    "shadcn",
+    "ultracite",
+    "oxlint",
+    "oxfmt",
+    "oxc",
+    "lucide",
+    "geist",
+    "neon",
+    "drizzle",
+    "nextjs",
+    "nuqs",
+    "vercel",
+    "commitlint",
+    "lintstagedrc",
+    "plopfile",
+    "plop",
+    "husky",
+    "clsx",
+    "tailwindcss",
+    "vscode",
+    "mkdir",
+    "unlink",
+    "tsgolint"
+  ],
+  "ignoreWords": [],
+  "patterns": [
+    {
+      "name": "hexColor",
+      "pattern": "(?:#)?:[0-9a-fA-F]{3}|[0-9a-fA-F]{6}"
+    }
+  ],
+  "ignoreRegExpList": ["/\\b[a-z]+rc\\b/"],
+  "import": []
+}
