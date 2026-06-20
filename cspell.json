@@ -14,7 +14,7 @@
     "tsconfig.tsbuildinfo",
     ".vscode",
     ".env*",
-    ".github"
+    ".github/ISSUE_TEMPLATE/**"
   ],
   "dictionaryDefinitions": [
     {
