@@ -592,6 +592,49 @@ Before requesting review (or before merging, if you're the maintainer), read you
 - Feature branches → `develop`: **Squash merge.** Your entire branch becomes a single commit on `develop` with the PR title as the commit message. This is why PR titles must follow Conventional Commits — the squash merge commit is what `release-it` reads to generate the changelog.
 - `develop` → `main`: **Merge commit.** Preserves the boundary between release candidates and production clearly.
 
+### Merge Commits
+
+Pull requests are merged using Squash and Merge.
+
+The resulting squash commit should summarize the complete change set and
+follow this format:
+
+<type>(<scope>): <short imperative description>
+
+<Why this change was made>
+
+- Key change 1
+- Key change 2
+- Key change 3
+
+[Optional Breaking Changes]
+
+fixes: #123
+
+---
+
+Co-authored-by: user-name <email@example.com>
+
+#### Example
+
+```md
+chore(git): strengthen commit validation workflow
+
+improve repository maintenance and contributor onboarding by expanding
+documentation and adding additional commit validation safeguards.
+
+- add Husky pre-push hook to validate commit messages before push.
+- add build status, open issues, and repository stars badges to README.
+- add Development Setup documentation to README.
+- extend commit validation coverage beyond local commit creation.
+
+fixes: #123
+
+---
+
+Co-authored-by: stephen-wm <hellostephenwm@gmail.com>
+```
+
 ### Draft PRs
 
 Open a Draft PR early if you want feedback on an approach before finishing the implementation. Prefix the title with `[WIP]` and explain in the description what you have and what you're looking for. Do not mark a PR ready for review until all checklist items are complete.
