@@ -6,6 +6,28 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-06-19
+
+### Added
+
+- Issue templates for bug reports, feature requests, user stories, tasks, and documentation issues.
+- Pull request template.
+- CONTRIBUTING.md with full development workflow and coding standards.
+- CODE_OF_CONDUCT.md based on Contributor Covenant v2.1.
+- SECURITY.md with vulnerability reporting guidelines.
+- SUPPORT.md with instructions on how to ask questions and receive help on the project.
+- [Versioning](./README.md#versioning) and [Contributing](./README.md#versioning) sections in README file.
+
+### Changed
+
+- README now shows Nestwork logo with light and dark mode logo variants.
+- Updated project structure diagram in README to reflect newly added files and folders.
+- Updated ignore pattern for `.github/` folder to target YML/YAML files only in cspell config.
+
+### Fixed
+
+- Lint-staged configuration causing RANDOM `[SIGKILL]` error on JSON and markdown files.
+
 ## [0.2.0] - 2026-06-19
 
 ### Added
@@ -51,6 +73,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Updated application metadata to use the Nestwork name and description.
 - Replaced the default Next.js landing page with an under-construction page linking to the Nestwork organization and web repository
 
-[Unreleased]: https://github.com/nestwork-xyz/web/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/nestwork-xyz/web/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/nestwork-xyz/web/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/nestwork-xyz/web/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/nestwork-xyz/web/releases/tag/v0.1.0
