@@ -1,0 +1,30 @@
+{
+  "recommendations": [
+    "github.vscode-pull-request-github",
+    "yzhang.markdown-all-in-one",
+    "csstools.postcss",
+    "mylesmurphy.prettify-ts",
+    "yoavbls.pretty-ts-errors",
+    "infeng.vscode-react-typescript",
+    "redhat.vscode-yaml",
+    "formulahendry.auto-rename-tag",
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "icrawl.discord-vscode",
+    "mikestead.dotenv",
+    "editorconfig.editorconfig",
+    "usernamehw.errorlens",
+    "dsznajder.es7-react-js-snippets",
+    "mhutchie.git-graph",
+    "donjayamanne.githistory",
+    "pkief.material-icon-theme",
+    "cardinal90.multi-cursor-case-preserve",
+    "christian-kohler.npm-intellisense",
+    "davidanson.vscode-markdownlint",
+    "christian-kohler.path-intellisense",
+    "oxc.oxc-vscode",
+    "johnpapa.vscode-peacock",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode-remote.remote-wsl"
+  ]
+}
