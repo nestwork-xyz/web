@@ -14,16 +14,30 @@
 
 ```ASCII
 nestwork-xyz/web/
+├─ .claude/                             # Claude Code workspace settings, commands, and contexts
+├─ .cspell/                             # Spell-check dictionaries
+├─ .github/                             # GitHub configuration (workflows, issue/PR templates, etc.)
+│  └─ hooks/                            # AI agent hook configurations (Ultracite)
+├─ .husky/                              # Git hooks for enforcing code quality and commit standards
+├─ .vscode/                             # VSCode workspace settings, recommended extensions, etc.
+├─ docs/adr/                            # Architecture Decision Records (ADRs)
 ├─ public/                              # Static assets served directly by Next.js
 ├─ src/                                 # Application source code (App Router, components, styles, utilities)
 │  ├─ app/                              # Next.js App Router (routes, layouts, route handlers, etc.)
 │  │  ├─ layout.tsx                     # Root application layout
 │  │  └─ page.tsx                       # Home page
+├─ .editorconfig                        # Editor-agnostic coding style rules
 ├─ .gitattributes                       # Git behavior settings (line endings, diff rules, etc.)
 ├─ .gitignore                           # Files and directories excluded from version control
+├─ .lintstagedrc.json                   # lint-staged configuration for running checks on staged files
+├─ .markdownlint-cli2.jsonc             # Markdown linting configuration
+├─ .npmrc                               # npm configuration (dependency behavior, install settings)
+├─ .nvmrc                               # Node.js version for local development consistency
 ├─ AGENTS.md                            # Guidelines for AI agents/tools interacting with the codebase
 ├─ CHANGELOG.md                         # Project changelog (Keep a Changelog format)
 ├─ CLAUDE.md                            # Project-specific instructions and context for Claude AI
+├─ commitlint.config.mjs                # Commit message linting rules (Conventional Commits)
+├─ cspell.json                          # Spell checking configuration for code and docs
 ├─ LICENSE                              # Project license (AGPL-3.0)
 ├─ next.config.ts                       # Next.js configuration
 ├─ package-lock.json                    # Locked dependency versions for reproducible installs
