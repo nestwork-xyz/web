@@ -15,7 +15,8 @@
     ".vscode",
     ".env*",
     ".github/**/*.yml",
-    ".github/**/*.{yaml}"
+    ".github/**/*.{yaml}",
+    ".github/**/*.sh"
   ],
   "dictionaryDefinitions": [
     {
