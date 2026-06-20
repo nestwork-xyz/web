@@ -50,12 +50,20 @@ nestwork-xyz/web/
 │  └─ adr/                              # Architecture Decision Records (ADRs)
 ├─ plop-templates/                      # Handlebars templates for Plop code generators
 ├─ public/                              # Static assets served directly by Next.js
+│  ├─ brand/                            # Nestwork brand images
+│  │  ├─ svg/                           # SVG logo variants (primary, dark, white, etc.)
+│  │  └─ png/                           # PNG logo variants (primary, dark, white, etc.)
+│  ├─ illustrations/                    # SVG illustrations
+│  └─ ...                               # Browser and UI icons
 ├─ src/                                 # Application source code (App Router, components, styles, utilities)
 │  ├─ app/                              # Next.js App Router (routes, layouts, route handlers, etc.)
-│  │  ├─ favicon.ico                    # Browser tab icon
 │  │  ├─ globals.css                    # Global stylesheet
 │  │  ├─ layout.tsx                     # Root application layout
+│  │  ├─ loading.tsx                    # Global loading UI fallback
+│  │  ├─ manifest.ts                    # Web app manifest configuration for PWA metadata
+│  │  ├─ not-found.tsx                  # Custom 404 page
 │  │  └─ page.tsx                       # Home page
+│  └─ config/                           # App configuration (metadata, site, nav, etc.)
 ├─ .editorconfig                        # Editor-agnostic coding style rules
 ├─ .gitattributes                       # Git behavior settings (line endings, diff rules, etc.)
 ├─ .gitignore                           # Files and directories excluded from version control
