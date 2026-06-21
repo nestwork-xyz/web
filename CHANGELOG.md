@@ -6,6 +6,27 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Added
+
+- Added shadcn/ui configuration and initial design system foundation with tokens and reusable UI components.
+- Introduced application theming infrastructure with `next-themes`, including theme providers, theme hooks, and a reusable theme toggle component.
+- Hydration and mounting utility hooks to safely handle client-only behavior (`use-hydrated`, `use-mounted`).
+- Reusable layout components (`Container`, `Grid`, `Flex`, `Stack`) to establish a consistent design system foundation.
+- Added a shared header layout component.
+- Enabled `allowedDevOrigins` option in Next.js configuration to enable application preview on external devices during development.
+- Enabled app providers in root `layout.tsx` file and `suppressedHydrationWarning`.
+
+### Changed
+
+- Updated `.gitignore` to allow tracking `.env.example` while ignoring local environment files.
+- Updated TypeScript configuration to strengthen compiler options:
+  - Enabled `noFallThroughCaseInSwitch` and `noUnCheckedIndexedAccess` options
+  - Disabled `allowUnreachableCode` option suppression
+
+### Removed
+
+- `public/eclipse.svg` static image file, `Eclipse` icon now loaded from `components/shared/icons.tsx`.
+
 ## [0.5.0] - 2026-06-20
 
 ### Added
